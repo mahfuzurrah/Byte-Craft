@@ -12,11 +12,11 @@
 
 <body>
     <div class="main">
-        <div class="header">
+        <div class="header" id="header">
             <div class="container">
                 <div class="navbar">
                     <a href="index.html" class="logo"><img src="asstes/svg/logo.svg" alt="" /></a>
-                    <ul class="nav_menu">
+                    <ul class="nav_menu" id="nav_menu">
                         <li class="nav_list">
                             <a href="#" class="nav_link"><img src="asstes/img/Byte Craft 1.png" alt="" /></a>
                         </li>
@@ -35,13 +35,15 @@
                     <div class="btn_area">
                         <div class="lang_selector">
                             <select class="custom-select">
-                                <option selected>En</option>
+                                <option selected>EN</option>
                                 <option value="1">BD</option>
-                                <option value="3">Sp</option>
+                                <option value="3">SP</option>
                             </select>
                         </div>
-
                         <button class="btn">Contact Us</button>
+                        <button class="toggle_btn" id="toggleButton" onclick="toggleMenu()">
+                            <iconify-icon class="icons" icon="ic:round-menu"></iconify-icon>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -422,9 +424,8 @@
                                     Eligendi sequi officia nihil esse distinctio, vero
                                     consequuntur excepturi in perspiciatis qui. Quo corporis
                                     dolorem culpa quaerat iure sed impedit aliquid optio? Saepe
-                                    quod eius
-                                    dolorem culpa quaerat iure sed impedit aliquid optio? Saepe
-                                    quod eius
+                                    quod eius dolorem culpa quaerat iure sed impedit aliquid
+                                    optio? Saepe quod eius
                                 </p>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -448,6 +449,164 @@
                                 <p>Company, CEO</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <div class="section_title">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="swiper blog_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="asstes/img/blog1.png" alt="" />
+                                </div>
+                                <div class="blog_tag">
+                                    <p>Business Intelligence</p>
+                                </div>
+                                <h4>Challenges Named as a Global Leader in Big Data</h4>
+                                <p>
+                                    Equal blame belongs too those who fail in their through
+                                    weakness will shrinking.
+                                </p>
+                                <a href="#" class="learn_more_btn">Learn More
+                                    <iconify-icon class="icons" icon="cil:arrow-right"></iconify-icon></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="asstes/img/blog2.png" alt="" />
+                                </div>
+                                <div class="blog_tag">
+                                    <p>Business Intelligence</p>
+                                </div>
+                                <h4>Challenges Named as a Global Leader in Big Data</h4>
+                                <p>
+                                    Equal blame belongs too those who fail in their through
+                                    weakness will shrinking.
+                                </p>
+                                <a href="#" class="learn_more_btn">Learn More
+                                    <iconify-icon class="icons" icon="cil:arrow-right"></iconify-icon></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="asstes/img/blog3.png" alt="" />
+                                </div>
+                                <div class="blog_tag">
+                                    <p>Business Intelligence</p>
+                                </div>
+                                <h4>Challenges Named as a Global Leader in Big Data</h4>
+                                <p>
+                                    Equal blame belongs too those who fail in their through
+                                    weakness will shrinking.
+                                </p>
+                                <a href="#" class="learn_more_btn">Learn More
+                                    <iconify-icon class="icons" icon="cil:arrow-right"></iconify-icon></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="asstes/img/blog1.png" alt="" />
+                                </div>
+                                <div class="blog_tag">
+                                    <p>Business Intelligence</p>
+                                </div>
+                                <h4>Challenges Named as a Global Leader in Big Data</h4>
+                                <p>
+                                    Equal blame belongs too those who fail in their through
+                                    weakness will shrinking.
+                                </p>
+                                <a href="#" class="learn_more_btn">Learn More
+                                    <iconify-icon class="icons" icon="cil:arrow-right"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="footer_content">
+                    <div class="left_item">
+                        <h3>Subscribe now</h3>
+                        <div class="subscribe">
+                            <input type="email" name="email" placeholder="Enter email address " />
+                            <bbutton class="btn">Subscribe</bbutton>
+                        </div>
+                        <div class="footer_list">
+                            <div class="list">
+                                <div class="text">
+                                    <h5>Mailing Address</h5>
+                                    <p>Challenges Inc. 382 NE 191st Street, PMB 93453</p>
+                                </div>
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#">
+                                            <iconify-icon class="icons" icon="ic:baseline-facebook"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <iconify-icon class="icons" icon="mdi:instagram"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <iconify-icon class="icons" icon="mdi:twitter"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <iconify-icon class="icons" icon="mdi:youtube"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <!-- Add more social media icons as needed -->
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <div class="text">
+                                    <h5>Quick Links</h5>
+                                </div>
+                                <ul class="nav_menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Case Study</a></li>
+                                    <li><a href="#">News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_item">
+                        <h3>Contact Us</h3>
+                        <form action="">
+                            <input type="name" name="name" placeholder="Full Name" />
+                            <div class="input_group">
+                                <input type="email" name="email" placeholder="Email address" />
+                                <input type="phone" name="phone" placeholder="Phone (optional)" />
+                            </div>
+                            <textarea name="" id="" cols="5" rows="4" placeholder="Brief message"></textarea>
+                            <button class="btn">Just Send</button>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="copy_right_area">
+                    <p>Copyright © 2023 Logo. All rights reserved.</p>
+                    <div class="condition">
+                        <a href="">Terms and Conditions</a>
+                        <a href="">Privacy statement</a>
                     </div>
                 </div>
             </div>

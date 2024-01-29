@@ -909,8 +909,12 @@ section {
 }
 
 .footer .copy_right_area p,
-.footer .copy_right_area a{
+.footer .copy_right_area a {
   color: var(--white-color);
+}
+
+#shadow-host-companion {
+  display: none;
 }
 
 /* ================ Media Query ===================== */
